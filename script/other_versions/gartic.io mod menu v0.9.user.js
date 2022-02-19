@@ -521,7 +521,7 @@ $('.content').on('click', '.ic-okeys', function() {  $('#popUp').css({"display":
  }
 
  function loadwoldlist() { // tr: burası github sayfamdan kelime listesini yüklediğimiz yer eski sürümlerde buradan yüklemiyorduk // en: this is where we loaded the wordlist from my github page we didn't load it from here in older versions
-     let listtext = "https://raw.githubusercontent.com/anonimbiri/gartic.io-hack/main/world_list/en.json";
+     let listtext = "https://raw.githubusercontent.com/Mortyyy137/gartic.io-hack/main/world_list/en.json";
      if (lang==999){
      if(customurl){
           $.getJSON(customurl, function(data) {
@@ -530,13 +530,13 @@ $('.content').on('click', '.ic-okeys', function() {  $('#popUp').css({"display":
                 }).fail(function(jqXHR, textStatus, errorThrown) { customurl=null; sendpopup("Error",`Encountered a problem loading the word list\nerror description: ${textStatus}`, "https://i.imgur.com/JQGPXAb.gif");});}
      }else{
      if (lang==8){
-             listtext = "https://raw.githubusercontent.com/anonimbiri/gartic.io-hack/main/world_list/tr.json";
+             listtext = "https://raw.githubusercontent.com/Mortyyy137/gartic.io-hack/main/world_list/tr.json";
          }else if (lang==23){
-             listtext = "https://raw.githubusercontent.com/anonimbiri/gartic.io-hack/main/world_list/az.json";
+             listtext = "https://raw.githubusercontent.com/Mortyyy137/gartic.io-hack/main/world_list/az.json";
          }else if (lang==19){
-             listtext = "https://raw.githubusercontent.com/anonimbiri/gartic.io-hack/main/world_list/ar.json";
+             listtext = "https://raw.githubusercontent.com/Mortyyy137/gartic.io-hack/main/world_list/ar.json";
          }else{
-             listtext = "https://raw.githubusercontent.com/anonimbiri/gartic.io-hack/main/world_list/en.json";
+             listtext = "https://raw.githubusercontent.com/Mortyyy137/gartic.io-hack/main/world_list/en.json";
          }
        $.getJSON(listtext, function(data) {
     console.log( `%cLoad worldlist url:%c ${listtext}`, "background: green;", "background: none;");
